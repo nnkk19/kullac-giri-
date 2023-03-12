@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class kosullar {
+
+	public static void main(String[] args) {
+		// Ödev Eğer şifre yanlış ise kullanıcıya şifresini sıfırlayıp 
+		//sıfırlamayacağını sorun, eğer kullanıcı sıfırlamak isterse 
+		//yeni girdiği şifrenin hatalı girdiği ve unuttuğu şifre ile
+		//aynı olmaması gerektiğini kontrol edip , 
+		//şifreler aynı ise ekrana "Şifre oluşturulamadı, lütfen başka şifre giriniz." 
+		//sorun yoksa "Şifre oluşturuldu" yazan programı yazınız.
+      
+		String userName,password,cevap,yeniSifre;
+		Scanner inp= new Scanner(System.in);
+	
+		System.out.print("kullanıcı adınız:");
+		userName =inp.nextLine();
+		
+		System.out.print("şifreniz:");
+		password =inp.nextLine();
+		 if(userName.equals("patika")) {
+		 }else {
+			 System.out.print(" kullanıcı adı yanlış");
+		 if(password.equals("java123")) {
+			 System.out.print("giriş yaptınız");
+		 }else {
+	 System.out.println("bilgileriniz yanlış! şifrenizi sıfırlamak ister misiniz\nEvet\nHayır");
+		
+		   
+            cevap =inp.nextLine();
+		
+		    if(cevap.equals("evet")) {
+			
+		   System.out.print("yeni şifrenizi giriniz lütfen:");
+			yeniSifre=inp.nextLine();
+			
+			if(yeniSifre.equals("java123")) {
+			System.out.print("lütfen başka şifre giriniz");
+			}else {
+			System.out.print("şifreniz başarı ile oluşturulmuştur");
+
+			}
+		}}}
+	}}
